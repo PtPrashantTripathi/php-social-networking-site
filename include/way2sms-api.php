@@ -139,7 +139,7 @@ class WAY2SMSClient
 function sendWay2SMS($phone, $msg)
 {
     $client = new WAY2SMSClient();
-    $client->login('8435782545','A2233T');
+    $client->login('phonenumber','paassword');
     $result = $client->send($phone, $msg);
     $client->logout();
     return $result;
